@@ -66,6 +66,8 @@ stages {
             echo '========== Running Playwright tests =========='
 
             script {
+                echo "BROWSER: ${params.BROWSER}"
+                echo "WORKERS: ${params.WORKERS}"
                 try {
                     bat """
                         npx playwright test ^
