@@ -63,7 +63,7 @@ test('Print specific table',async({page})=>{
     console.log(await data.innerText())
 })
 
-test.only('print dynamic table',async({page})=>{
+test('print dynamic table',async({page})=>{
     await page.goto('https://www.leafground.com/table.xhtml');
 
     const table = await page.locator('//table')
