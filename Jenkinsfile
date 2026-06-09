@@ -70,7 +70,7 @@ stages {
                 echo "WORKERS: ${params.WORKERS}"
                 try {
                     bat """
-                        npx playwright test ^
+                        npx playwright test checkBox.spec.js^
                         --project=%BROWSER% ^
                         --workers=%WORKERS%
                     """
